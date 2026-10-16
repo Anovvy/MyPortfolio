@@ -115,20 +115,28 @@ p {
 }
 
 .header .navbar-nav {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
-	padding: 0 20px;
-	transition: background-color 0.3s ease;
+	padding: 0 25px;
+	transition: all 0.3s ease;
 }
 
 .header.active .navbar-nav {
 	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 }
 
 .header.active .navbar-nav>li>a {
 	font-family: 'Open Sans', arial, sans-serif;
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 500;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	text-shadow: none;
@@ -136,10 +144,10 @@ p {
 }
 
 .header.active {
-	background-color: rgba(250, 250, 250, 0.98);
-	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	background-color: rgba(250, 250, 250, 0.92);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -244,12 +252,23 @@ bootstrap.min.css:5 .navbar-toggle {
 
 .baner-content .text-content {
 	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 15px;
+	padding: 40px;
+	display: inline-block;
+	max-width: 800px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .baner-content .text-content h2 {
 	font-size: 36px;
 	font-weight: 400;
 	color: #fff;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .baner-content .text-content h2 span {
@@ -260,18 +279,15 @@ bootstrap.min.css:5 .navbar-toggle {
 .baner-content .text-content h2 em {
 	font-style: normal;
 	font-weight: 700;
-	color: #f89624 !important;
+	color: #0284c7 !important;
 }
 
 .baner-content .text-content p {
 	color: #fff;
 	font-size: 14px;
 	line-height: 24px;
-	padding: 0px 25%;
-}
-
-.baner-content .text-content .primary-white-button {
-	margin-top: 25px;
+	padding: 0px 10px;
+	margin-bottom: 0;
 }
 
 
@@ -456,18 +472,21 @@ bootstrap.min.css:5 .navbar-toggle {
 
 #blog .section-heading {
 	text-align: left;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 582px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	min-height: 100%;
+	height: auto;
 	margin-left: -100vh;
 	padding-left: 100vh;
-	overflow: hidden !important;
+	box-sizing: content-box;
 }
 
 #blog .section-heading h4 {
 	margin-top: 0px;
-	font-size: 20px;
+	font-size: 22px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
@@ -477,13 +496,15 @@ bootstrap.min.css:5 .navbar-toggle {
 #blog .section-heading .line-dec {
 	width: 270px;
 	height: 1px;
-	background-color: rgba(250, 250, 250, 0.5);
-	margin: 20px 0 15px 0;
+	background-color: #ffffff;
+	margin: 18px 0 15px 0;
 }
 
 #blog .section-heading p {
-	color: #fff;
-	padding-right: 70px;
+	color: rgba(255, 255, 255, 0.85);
+	padding-right: 50px;
+	font-size: 14px;
+	line-height: 22px;
 }
 
 .wrapper {
@@ -492,77 +513,196 @@ bootstrap.min.css:5 .navbar-toggle {
 
 .tabs {
 	list-style: none;
-	margin-top: 40px;
-	padding-right: 70px;
+	margin-top: 30px;
+	padding-right: 50px;
 }
 
 .tabs li {
 	display: block;
-	text-align: center;
-	margin: 25px 0px;
+	text-align: left;
+	margin: 12px 0px;
 }
 
 .tabs a {
 	display: block;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
-	text-transform: capitalize;
-	letter-spacing: 0.5px;
-	color: #121212;
-	font-size: 15px;
-	font-weight: 500;
-	padding: 12px 12px;
-	background-color: #fff;
+	letter-spacing: 0.3px;
+	color: #1e293b;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 13px 18px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	border-left: 4px solid transparent;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+	transition: all 0.25s ease-in-out;
 }
 
 .tabs a:hover {
-	color: #f7c552;
+	color: #0284c7;
+	background-color: #f8fafc;
+	border-left: 4px solid #38bdf8;
+	transform: translateX(4px);
 }
 
 .tabs .active {
-	color: #f7c552;
+	color: #0284c7;
+	background-color: #ffffff;
+	border-left: 4px solid #0284c7;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+	transform: translateX(4px);
 }
 
 #first-tab-group {
 	margin-top: 30px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+.tabgroup {
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+}
+
+.tabgroup img {
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+	display: block;
+	border-bottom: 1px solid #e2e8f0;
 }
 
 .tabgroup .text-content {
-	background-color: #fff;
-	color: #fff;
-	padding: 25px;
+	background-color: #ffffff;
+	padding: 26px 30px;
 	text-align: left;
 }
 
+.tabgroup .project-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
 .tabgroup .text-content h4 {
-	font-size: 17px;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-	color: #121212;
-	margin-top: 0px;
-	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #0f172a;
+	margin: 0;
+	line-height: 1.3;
 }
 
-.tabgroup .text-content span {
+.project-gh-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background-color: #0f172a;
+	color: #ffffff !important;
+	padding: 8px 18px;
+	border-radius: 20px;
 	font-size: 13px;
-	color: #33c1cf;
-}
-
-.tabgroup .text-content a {
-	font-size: 13px;
-	color: #33c1cf;
+	font-weight: 600;
 	text-decoration: none;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.project-gh-btn:hover {
+	background-color: #0284c7;
+	color: #ffffff !important;
+	text-decoration: none;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
+
+.project-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 12px 0 15px 0;
+}
+
+.project-tag {
+	display: inline-block;
+	background-color: #f1f5f9;
+	color: #334155;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 4px 10px;
+	border-radius: 4px;
+	border: 1px solid #cbd5e1;
+	letter-spacing: 0.3px;
 }
 
 .tabgroup .text-content p {
-	margin-top: 10px;
+	color: #334155;
+	font-size: 14.5px;
+	line-height: 1.7;
+	margin: 0;
 }
 
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+/* UNIFIED EXPERIENCE & EDUCATION SECTION HARMONIZATION */
+#education {
+	background-color: #ffffff;
+	padding: 70px 0;
+}
+
+#education img {
+	border-radius: 12px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#education img:hover {
+	transform: scale(1.02);
+}
+
+#experience {
+	background-color: #f8fafc;
+	padding: 70px 0;
+}
+
+#experience .service-item {
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 35px 25px;
+	margin-bottom: 30px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+	border: 1px solid #e2e8f0;
+	transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+	text-align: center;
+}
+
+#experience .service-item:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+	border-color: #cbd5e1;
+}
+
+#experience .service-item .line-dec {
+	width: 50px;
+	height: 2px;
+	background-color: #0284c7;
+	margin: 15px auto;
+}
+
+#experience .service-item h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #0f172a;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
 #contact-us {
@@ -800,19 +940,22 @@ footer .connect-us ul li {
 
 footer .connect-us ul li a {
 	display: inline-block;
-	width: 28px;
-	height: 28px;
-	line-height: 28px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
 	text-align: center;
-	background-color: #fff;
+	background-color: #ffffff;
 	border-radius: 50%;
-	color: #373a3c;
-	font-size: 15px;
-	transition: all 0.3s;
+	color: #0f172a;
+	font-size: 16px;
+	transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 footer .connect-us ul li a:hover {
-	background-color: #f7c552;
+	background-color: #0284c7;
+	color: #ffffff;
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
 }
 
 
@@ -821,7 +964,7 @@ footer .connect-us ul li a:hover {
 @media (max-width: 991px) {
 
 	.baner-content .text-content p {
-		padding: 0px 15%;
+		padding: 0px 5px;
 	}
 
 
@@ -861,26 +1004,52 @@ footer .connect-us ul li a:hover {
 
 	#blog .section-heading {
 		text-align: center;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		background-color: rgba(0, 0, 0, 0.5);
+		padding-top: 50px;
+		padding-bottom: 40px;
+		background-color: rgba(0, 0, 0, 0.65);
 		margin-left: -15px;
-		padding-left: 0vh;
+		padding-left: 15px;
 		margin-right: -15px;
-		padding-right: 0vh;
-		overflow: hidden !important;
+		padding-right: 15px;
+		height: auto;
+		overflow: visible;
 	}
 
 	#blog .section-heading .line-dec {
-		margin: 20px auto 15px auto;
+		margin: 15px auto;
 	}
 
 	#blog .section-heading p {
-		padding: 0px 30px;
+		padding: 0px 15px;
 	}
 
 	.tabs {
-		padding: 0px 45px;
+		padding: 0px 10px;
+	}
+
+	.tabs li {
+		text-align: center;
+	}
+
+	.tabs a {
+		text-align: center;
+		border-left: none;
+		border-bottom: 3px solid transparent;
+	}
+
+	.tabs a:hover,
+	.tabs .active {
+		border-left: none;
+		border-bottom: 3px solid #0284c7;
+		transform: none;
+	}
+
+	.tabgroup img {
+		height: 240px;
+	}
+
+	.tabgroup .text-content {
+		padding: 20px;
 	}
 
 	#first-tab-group {
@@ -922,7 +1091,7 @@ footer .connect-us ul li a:hover {
 
 @media (max-width: 768px) {
 	.baner-content .text-content p {
-		padding: 0px 10%;
+		padding: 0px 5px;
 	}
 
 	#main-nav {
