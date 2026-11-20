@@ -2,15 +2,15 @@
   "schemaVersion": 1,
   "meta": {
     "title": "Bayu Nabiil - Portfolio | Geospatial Data & ML Engineer",
-    "description": "Bayu Muhammad Nabiil Makarim - Geospatial Data & ML Engineer specializing in GeoAI, Remote Sensing, Deep Learning pipelines, and GIS Automation."
+    "description": "Bayu Muhammad Nabiil Makarim - Geospatial Data & ML Engineer specializing in GeoAI, Remote Sensing, and GIS Workflow Automation."
   },
   "hero": {
     "avatar": "img/bayu_profile.png",
     "avatarAlt": "Bayu Nabiil",
     "firstNameHighlight": "BAYU",
     "restOfName": "MUHAMMAD NABIIL MAKARIM",
-    "headline": "GeoAI & GIS Engineer | Advanced OpenStreetMap Contributor",
-    "description": "Highly driven GeoAI Engineer with a strong focus on geospatial automation and spatial data analytics. Proven expertise in developing custom Python-based tools and deep learning models (YOLO, DeepLabV3+, SegFormer) to extract features from drone and satellite imagery."
+    "headline": "Geospatial Data & ML Engineer \u00b7 GeoAI, Remote Sensing & GIS Automation",
+    "description": "Geospatial Data & ML Engineer specializing in GeoAI, Remote Sensing, and GIS Workflow Automation. I build end-to-end spatial data pipelines, deep learning solutions for drone and satellite imagery, and custom desktop GIS tools that streamline mapping, vector topology quality control, and spatial analytics."
   },
   "education": {
     "image": "img/unj.png",
