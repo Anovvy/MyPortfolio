@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "title": "Bayu Nabiil - Portfolio | Geospatial Data & ML Engineer",
+    "description": "Bayu Muhammad Nabiil Makarim - Geospatial Data & ML Engineer specializing in GeoAI, Remote Sensing, and GIS Workflow Automation."
+  },
+  "hero": {
+    "avatar": "img/bayu_profile.png",
+    "avatarAlt": "Bayu Nabiil",
+    "firstNameHighlight": "BAYU",
+    "restOfName": "MUHAMMAD NABIIL MAKARIM",
+    "headline": "Geospatial Data & ML Engineer \u00b7 GeoAI, Remote Sensing & GIS Automation",
+    "description": "Geospatial Data & ML Engineer specializing in GeoAI, Remote Sensing, and GIS Workflow Automation. I build end-to-end spatial data pipelines, deep learning solutions for drone and satellite imagery, and custom desktop GIS tools that streamline mapping, vector topology quality control, and spatial analytics."
+  },
+  "education": {
+    "image": "img/unj.png",
+    "imageAlt": "State University of Jakarta (UNJ)",
+    "institution": "STATE UNIVERSITY OF JAKARTA (2022 - 2026)",
+    "degree": "Bachelor of Geography \u2013 Overall GPA 3.76/4.00",
+    "relevantCourses": [
+      "Cartography",
+      "Spatial Modeling",
+      "Urban Planning",
+      "Natural Hazard Analysis"
+    ]
+  },
+  "experience": [
+    {
+      "organization": "DPUPR Banten",
+      "logo": "img/pupr.jpg",
+      "logoAlt": "Banten Public Works and Spatial Planning Department (DPUPR)",
+      "role": "Individual Mapping Consultant",
+      "locationAndPeriod": "Serang, Indonesia (Jun 2026 - Present)",
+      "summary": "Engineered an automated land cover semantic segmentation pipeline for ultra-high-resolution imagery."
+    },
+    {
+      "organization": "Terra Drone Agri",
+      "logo": "img/terradrone.jpg",
+      "logoAlt": "Terra Drone Agri",
+      "role": "GIS Analyst",
+      "locationAndPeriod": "Jakarta, Indonesia (Jun 2025 - Mar 2026)",
+      "summary": "Developed automated drainage and road detection tools in QGIS using multiple deep learning architectures."
+    },
+    {
+      "organization": "Geospatial Information Agency (BIG)",
+      "logo": "img/big.png",
+      "logoAlt": "Geospatial Information Agency of Indonesia (BIG)",
+      "role": "GIS & Remote Sensing Intern",
+      "locationAndPeriod": "Bogor, Indonesia (Feb 2025 - Jul 2025)",
+      "summary": "Developed a reusable Python workflow for LST extraction and LULC classification using Open Data Cube."
+    }
+  ],
+  "projectsSection": {
+    "heading": "Featured Projects",
+    "intro": "Here are some of my recent GeoAI and spatial automation projects.",
+    "items": [
+      {
+        "id": "vector-data-office-boy",
+        "tabLabel": "Vector Data Office Boy",
+        "title": "Vector Data Office Boy \u2013 QGIS Topology Cleaning Plugin (v1.0.3)",
+        "repoUrl": "https://github.com/Anovvy/vector-data-office-boy",
+        "image": "img/vector_data_office_boy.gif",
+        "imageAlt": "Vector Data Office Boy QGIS Plugin",
+        "tags": [
+          "QGIS 3.x Plugin",
+          "PyQGIS & Shapely",
+          "Topology Auditing",
+          "Zero Dependencies",
+          "Atomic Overwrite",
+          "CI/CD & QA"
+        ],
+        "description": "All-in-one QGIS 3.x plugin that automates polygon topology auditing and geometry cleaning for spatial planning (RTRW) and land-cover datasets. Enforces a deterministic four-stage repair pipeline (ring self-intersections, overlaps, internal gaps, and sliver polygons) with automatic local UTM normalization, zero external runtime dependencies, and atomic in-place overwrites."
+      },
+      {
+        "id": "geochip",
+        "tabLabel": "GeoChip Pipeline",
+        "title": "GeoChip \u2013 Multi-Satellite Earth Observation Pipeline",
+        "repoUrl": "https://github.com/Anovvy/GeoChip",
+        "image": "img/geochip.gif",
+        "imageAlt": "GeoChip Pipeline",
+        "tags": [
+          "Python 3.11",
+          "Docker Container",
+          "Google Earth Engine",
+          "Roboflow API",
+          "Multi-Satellite SAR & Optical",
+          "CLI v2.0"
+        ],
+        "description": "Advanced geospatial preparation pipeline that accelerates Earth Observation data ingestion and computer vision annotation workflows. Combines multi-sensor satellite fetching (Sentinel-2, Landsat, Sentinel-1 SAR, MODIS, DEM) with server-side Google Earth Engine compositing via an interactive CLI and Docker engine to eliminate manual preprocessing and rapidly export single-raster chips directly into Roboflow."
+      },
+      {
+        "id": "palmai-plugin",
+        "tabLabel": "PalmAI QGIS Plugin",
+        "title": "PalmAI \u2013 Deep Learning QGIS Plugin (v2.0.0)",
+        "repoUrl": "https://github.com/Anovvy/PalmAI_Plugin",
+        "image": "img/project3_1.gif",
+        "imageAlt": "PalmAI QGIS Plugin",
+        "tags": [
+          "QGIS Plugin",
+          "YOLOv8 Detection",
+          "DeepLabV3+ Segmentation",
+          "Decoupled Docker Engine",
+          "A* Pathfinding",
+          "CI/CD & 34 Tests"
+        ],
+        "description": "Automated spatial feature extraction system for QGIS that accelerates oil palm plantation inventory and condition monitoring from drone imagery. Combines YOLOv8 and DeepLabV3+ with A* pathfinding via a decoupled Docker architecture to eliminate OS dependency conflicts and rapidly deliver tree counts, crown centroids, health ratings, and canopy-resistant road networks."
+      },
+      {
+        "id": "vhr-satellite-segmentation-pipeline",
+        "tabLabel": "VHR Satellite Segmentation",
+        "title": "VHR Satellite Segmentation Pipeline",
+        "repoUrl": "https://github.com/Anovvy/vhr-satellite-segmentation-pipeline",
+        "image": "img/project1.gif",
+        "imageAlt": "VHR Satellite Segmentation Pipeline",
+        "tags": [
+          "SegFormer (MiT-B0)",
+          "DeepLabV3+ (ResNet50)",
+          "U-Net (ResNet34)",
+          "Sliding-Window Inference",
+          "GeoPackage / GDAL",
+          "Dockerized"
+        ],
+        "description": "Production-ready semantic segmentation pipeline that accelerates urban land-cover classification from 30 cm very-high-resolution (VHR) satellite imagery. Benchmarks SegFormer, DeepLabV3+, and U-Net models via containerized sliding-window tile inference to eliminate boundary edge artifacts and seamlessly produce georeferenced GeoTIFFs, polygonized GeoPackages, and cryptographic SHA-256 audit manifests."
+      },
+      {
+        "id": "arcmap-lulc-keyshortcuts",
+        "tabLabel": "ArcMap LULC Keyshortcuts",
+        "title": "ArcMap LULC Keyshortcuts \u2013 GIS Automation Tool",
+        "repoUrl": "https://github.com/Anovvy/ArcMap-LULC-Keyshortcuts",
+        "image": "img/project2.gif",
+        "imageAlt": "ArcMap LULC Keyshortcuts",
+        "tags": [
+          "ArcGIS / ArcMap 10.x",
+          "Python Add-In",
+          "AutoHotkey v2",
+          "LULC Digitization",
+          "OSM iD Ergonomics"
+        ],
+        "description": "Advanced workflow automation system for ArcMap 10.x that accelerates wall-to-wall Land Use Land Cover (LULC) polygon digitization. Adapts OpenStreetMap iD Editor ergonomics (home-row W-A-S-D controls) via an integrated Python Add-In and an AutoHotkey (AHK) engine to eliminate repetitive mouse-travel fatigue and drastically speed up polygon Cut and Merge operations."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "+6281231377930",
+    "email": "bayunabiil1365@gmail.com",
+    "socials": [
+      {
+        "platform": "linkedin",
+        "iconClass": "fa fa-linkedin",
+        "url": "https://linkedin.com/in/bayunabiil"
+      },
+      {
+        "platform": "github",
+        "iconClass": "fa fa-github",
+        "url": "https://github.com/Anovvy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+# Local-only AI rules and workspace skills (MUST NEVER be pushed to GitHub)
+AGENTS.md
+GEMINI.md
+.agents/
+
+# Python and OS artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
