@@ -69,7 +69,7 @@
           "Atomic Overwrite",
           "CI/CD & QA"
         ],
-        "description": "All-in-one QGIS 3.x plugin that automates polygon topology auditing and geometry cleaning for spatial planning (RTRW) and land-cover datasets. Enforces a deterministic four-stage repair pipeline\u2014resolving ring self-intersections, overlaps, internal gaps, and sliver polygons\u2014with automatic local UTM normalization, zero external runtime dependencies, and atomic in-place overwrites."
+        "description": "All-in-one QGIS 3.x plugin that automates polygon topology auditing and geometry cleaning for spatial planning (RTRW) and land-cover datasets. Enforces a deterministic four-stage repair pipeline (ring self-intersections, overlaps, internal gaps, and sliver polygons) with automatic local UTM normalization, zero external runtime dependencies, and atomic in-place overwrites."
       },
       {
         "id": "geochip",
