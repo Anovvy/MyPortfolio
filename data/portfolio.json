@@ -55,6 +55,23 @@
     "intro": "Here are some of my recent GeoAI and spatial automation projects.",
     "items": [
       {
+        "id": "vector-data-office-boy",
+        "tabLabel": "Vector Data Office Boy",
+        "title": "Vector Data Office Boy \u2013 QGIS Topology Cleaning Plugin (v1.0.3)",
+        "repoUrl": "https://github.com/Anovvy/vector-data-office-boy",
+        "image": "img/vector_data_office_boy.gif",
+        "imageAlt": "Vector Data Office Boy QGIS Plugin",
+        "tags": [
+          "QGIS 3.x Plugin",
+          "PyQGIS & Shapely",
+          "Topology Auditing",
+          "Zero Dependencies",
+          "Atomic Overwrite",
+          "CI/CD & QA"
+        ],
+        "description": "All-in-one QGIS 3.x plugin that automates polygon topology auditing and geometry cleaning for spatial planning (RTRW) and land-cover datasets. Enforces a deterministic four-stage repair pipeline\u2014resolving ring self-intersections, overlaps, internal gaps, and sliver polygons\u2014with automatic local UTM normalization, zero external runtime dependencies, and atomic in-place overwrites."
+      },
+      {
         "id": "geochip",
         "tabLabel": "GeoChip Pipeline",
         "title": "GeoChip \u2013 Multi-Satellite Earth Observation Pipeline",
